@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% form_theme formChambre 'bootstrap_4_layout.html.twig' %}
+
+
+
+
+{% block body %}
+
+   {{ form_start(formChambre)}}
+   <div class="form_group">
+   <label for="">Nombre de personnes </label>
+ 
+   {{ form_row(formChambre.nbpax)}} 
+   </div>
+   {{ form_end(formChambre)}}
+
+
+
+    
+    </br>
+    <button type="submit" class="btn btn-success" href="{{ path('home') }}> Ajouter </button>
+ 
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% form_theme formPax 'bootstrap_4_layout.html.twig' %}
+
+
+
+
+{% block body %}
+
+ {{ form_start(formPax)}}
+
+   
+        {{ form_row(formPax.age)}}
+ 
+    <label for="chambre">type de chambre:</label>
+<select name="type chambre" id="chambre">
+    <option value="">--type chambre--</option>
+    <option value="">4pax</option>
+    <option value="">3pax</option>
+    <option value="">2pax</option>  
+</select>
+
+ </br>
+<button type="submit" class="btn btn-success"> Valider </button>
+ {{ form_end(formPax)}}
+
+
+
+
+{% endblock %}
